@@ -120,3 +120,215 @@ html{scroll-behavior:auto}
 .music-toggle.hidden{
     display:none;
 }
+
+/* =========================================
+   SCREEN 0 — OPENING
+========================================= */
+
+.opening-screen{
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(201,167,106,.18),
+            transparent 38%
+        ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(90,28,41,.012) 0,
+            rgba(90,28,41,.012) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
+        #f8f1e5;
+}
+
+
+/* Decorative breathing circles */
+
+.opening-orbit{
+    position:absolute;
+    left:50%;
+    top:50%;
+    border:1px solid rgba(201,167,106,.28);
+    border-radius:50%;
+    pointer-events:none;
+    transform:translate(-50%,-50%);
+}
+
+.orbit-1{
+    width:240px;
+    height:240px;
+    animation:openingPulse 4s ease-in-out infinite;
+}
+
+.orbit-2{
+    width:330px;
+    height:330px;
+    border-color:rgba(201,167,106,.14);
+    animation:openingPulse 4s ease-in-out 1s infinite;
+}
+
+
+/* Invitation button */
+
+.opening-button{
+    position:relative;
+    z-index:2;
+
+    min-width:190px;
+    padding:15px 25px;
+
+    border:1px solid #c9a76a;
+    border-radius:999px;
+
+    background:rgba(255,253,248,.88);
+    color:#5a1c29;
+
+    font-family:Inter,sans-serif;
+    font-size:.72rem;
+    font-weight:500;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 10px 35px rgba(60,16,24,.10);
+
+    animation:openingButtonPulse 3s ease-in-out infinite;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.opening-button span{
+    display:inline-block;
+}
+
+.opening-button b{
+    display:inline-block;
+    margin-left:9px;
+    font-size:.9rem;
+    font-weight:400;
+    transition:transform .3s ease;
+}
+
+.opening-button:hover{
+    background:#5a1c29;
+    color:#fff;
+    transform:translateY(-3px);
+    box-shadow:
+        0 15px 40px rgba(60,16,24,.18);
+}
+
+.opening-button:hover b{
+    transform:translateY(3px);
+}
+
+
+/* Small decorative stars */
+
+.opening-spark{
+    position:absolute;
+    z-index:1;
+
+    color:#c9a76a;
+    font-size:.8rem;
+
+    pointer-events:none;
+
+    animation:
+        openingSpark 4s ease-in-out infinite;
+}
+
+.spark-a{
+    top:32%;
+    left:30%;
+}
+
+.spark-b{
+    right:30%;
+    bottom:32%;
+    animation-delay:1.4s;
+}
+
+.spark-c{
+    top:39%;
+    right:25%;
+    font-size:.5rem;
+    animation-delay:2.5s;
+}
+
+
+/* Animations */
+
+@keyframes openingPulse{
+
+    0%,100%{
+        opacity:.35;
+        transform:translate(-50%,-50%) scale(.96);
+    }
+
+    50%{
+        opacity:.75;
+        transform:translate(-50%,-50%) scale(1.04);
+    }
+}
+
+
+@keyframes openingButtonPulse{
+
+    0%,100%{
+        box-shadow:
+            0 10px 35px rgba(60,16,24,.10);
+    }
+
+    50%{
+        box-shadow:
+            0 12px 42px rgba(60,16,24,.18);
+    }
+}
+
+
+@keyframes openingSpark{
+
+    0%,100%{
+        opacity:.25;
+        transform:translateY(0) scale(.85);
+    }
+
+    50%{
+        opacity:.9;
+        transform:translateY(-10px) scale(1.15);
+    }
+}
+
+
+/* Locked screens */
+
+.locked-section{
+    display:none;
+}
+
+
+/* Music button starts hidden */
+
+.music-toggle.hidden{
+    display:none;
+}
+
+
+/* Reduced motion */
+
+@media(prefers-reduced-motion:reduce){
+
+    .opening-orbit,
+    .opening-button,
+    .opening-spark{
+        animation:none;
+    }
+
+}
