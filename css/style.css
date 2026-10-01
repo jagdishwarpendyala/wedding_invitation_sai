@@ -40,7 +40,7 @@ h2 em{color:#a9782c;font-weight:400}
 .person h3{margin:0;color:#5a1c29;font:600 clamp(1.75rem,5vw,2.35rem)/1.05 "Cormorant Garamond",serif}
 .qual{margin:8px 0 0;color:#75686a;font-size:.76rem}
 .divider{width:55px;height:1px;margin:23px auto 17px;background:#c9a76a}
-.family{max-width:310px;margin:0 auto;color:#5a1c29;font:1.12rem/1.35 "Cormorant Garamond",serif}
+.family{max-width:310px;margin:0 auto;color:#5a1c29;font:1.12rem/1.35 "Cormorant Garamond",serif;font-weight:700;}
 .place{margin:5px 0 0;color:#75686a;font-size:.72rem}
 .together-frame{position:relative;width:min(620px,92vw);margin:25px auto 23px;padding:10px;background:#fffdf8;border:1px solid #c9a76a;box-shadow:0 25px 75px rgba(60,16,24,.17)}
 .together-frame:before,.together-frame:after{position:absolute;width:50px;height:50px;border:1px solid #c9a76a;content:""}
@@ -338,4 +338,40 @@ html{scroll-behavior:auto}
     height:70px;
     object-fit:contain;
     margin:0 auto 18px;
+}
+
+.closing{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    text-align:center;
+}
+
+.closing-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.jai-sai-ram{
+    margin:28px 0 0;
+    color:#5a1c29;
+    font:600 clamp(1.8rem,5vw,2.5rem) "Cormorant Garamond",serif;
+    letter-spacing:.18em;
+    opacity:0;
+    transform:translateY(18px);
+    animation:jaiSaiRamReveal 1.8s ease-out .6s forwards;
+}
+
+@keyframes jaiSaiRamReveal{
+    from{
+        opacity:0;
+        transform:translateY(18px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
