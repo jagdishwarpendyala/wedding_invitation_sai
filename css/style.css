@@ -92,7 +92,7 @@ h2 em{color:#a9782c;font-weight:400}
 .swami{width:min(400px,35vw);justify-self:start;align-self:center}
 }
 @media(max-width:390px){
-.hero h1{font-size:3.9rem}
+/* .hero h1{font-size:3.9rem} */
 .countdown{gap:3px}
 .countdown div{padding-left:2px;padding-right:2px}
 .family{font-size:1rem}
