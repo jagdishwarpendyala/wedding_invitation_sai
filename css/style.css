@@ -114,7 +114,7 @@ html{scroll-behavior:auto}
 }
 /* Invitation opening lock */
 .locked-section{
-    display:none;
+    display:none !important;
 }
 
 .music-toggle.hidden{
