@@ -93,7 +93,7 @@ bgMusic.volume = 0.45;
 ================================ */
 
 const openInvitationButton =
-    document.querySelector('[data-scroll="couple"]');
+    document.getElementById("openInvitation");
 
 const lockedSections =
     document.querySelectorAll(".locked-section");
@@ -143,7 +143,7 @@ openInvitationButton.addEventListener("click", async () => {
 
     /* Move to The Couple */
 
-    document.getElementById("couple")?.scrollIntoView({
+    document.getElementById("top")?.scrollIntoView({
         behavior: "smooth"
     });
 
