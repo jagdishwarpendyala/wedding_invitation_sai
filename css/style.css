@@ -17,7 +17,7 @@ h2 em{color:#a9782c;font-weight:400}
 .rule{width:min(310px,72%);margin:0 auto 22px;display:flex;align-items:center;gap:13px}
 .rule span{flex:1;height:1px;background:#c9a76a}
 .rule b{color:#a9782c;font-size:.52rem}
-.hero h1{margin:0;color:#5a1c29;font:400 clamp(3.1rem,10vw,4.8rem)/.95 "Great Vibes",cursive}
+.hero h1{margin:0;color:#5a1c29;font:400 clamp(2.9rem,9.5vw,4.6rem)/.95 "Great Vibes",cursive}
 .hero h1 small{display:block;margin:14px 0;color:#a9782c;font:italic 2rem "Cormorant Garamond",serif}
 .hero-date{margin:34px 0 17px;color:#5a1c29;font:1.45rem "Cormorant Garamond",serif;letter-spacing:.2em}
 .hero-blessing{margin-bottom:31px;color:#75686a;font-size:.82rem}
