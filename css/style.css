@@ -112,3 +112,11 @@ html{scroll-behavior:auto}
         font-size:.62rem;
     }
 }
+/* Invitation opening lock */
+.locked-section{
+    display:none;
+}
+
+.music-toggle.hidden{
+    display:none;
+}
