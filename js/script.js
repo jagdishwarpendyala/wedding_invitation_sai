@@ -84,6 +84,7 @@ setInterval(updateCountdown, 1000);
 
 const bgMusic = document.getElementById("bgMusic");
 const musicToggle = document.getElementById("musicToggle");
+const scrollCue = document.getElementById("scrollCue");
 
 bgMusic.volume = 0.45;
 
@@ -106,7 +107,6 @@ openInvitationButton.addEventListener("click", async () => {
     lockedSections.forEach(section => {
         section.classList.remove("locked-section");
     });
-
 
     /* Show music button */
 
@@ -187,3 +187,4 @@ musicToggle.addEventListener("click", async () => {
         );
     }
 });
+
