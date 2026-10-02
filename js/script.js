@@ -102,15 +102,18 @@ const lockedSections =
 
 openInvitationButton.addEventListener("click", async () => {
 
-    /* Reveal all remaining screens */
+    /* Disable Screen 0 */
+    document.getElementById("opening").classList.add("disabled");
 
+    /* Reveal all remaining screens */
     lockedSections.forEach(section => {
         section.classList.remove("locked-section");
     });
 
     /* Show music button */
-
     musicToggle.classList.remove("hidden");
+    /* Show scroll cue */
+    scrollCue.classList.remove("hidden");
 
 
     /* Start music */
@@ -148,6 +151,31 @@ openInvitationButton.addEventListener("click", async () => {
     });
 
 }, { once: true });
+
+/* ================================
+   Hide Scroll Down on Final Screen
+================================ */
+
+const closingSection = document.querySelector(".closing");
+
+window.addEventListener("scroll", () => {
+
+    if (!closingSection) return;
+
+    /* Do nothing while invitation is still locked */
+    if (closingSection.classList.contains("locked-section")) {
+        return;
+    }
+
+    const rect = closingSection.getBoundingClientRect();
+
+    if (rect.top <= window.innerHeight * 0.5) {
+        scrollCue.classList.add("hidden");
+    } else {
+        scrollCue.classList.remove("hidden");
+    }
+
+});
 
 
 /* ================================
