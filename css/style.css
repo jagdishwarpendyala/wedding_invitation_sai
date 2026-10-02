@@ -434,20 +434,20 @@ html{scroll-behavior:auto}
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:flex-start;
+    justify-content:center;
     min-height:100vh;
     text-align:center;
-    padding:28px 22px 25px;
+    padding:40px 22px;
     box-sizing:border-box;
 }
 
+
 /* =========================================
-   PART 1 — TOP TEXT
+   TEXT ABOVE PHOTO
    ========================================= */
 
 .invited-countdown-section h3{
-    flex:0 0 auto;
-    margin:0 0 12px;
+    margin:0 0 18px;
     color:#5a1c29;
     font:500 clamp(1.6rem,5.5vw,2.8rem)/1.05 "Cormorant Garamond",serif;
 }
@@ -459,12 +459,10 @@ html{scroll-behavior:auto}
 
 
 /* =========================================
-   PART 2 — MIDDLE PHOTO
+   CENTER PHOTO
    ========================================= */
 
 .invited-countdown-section .family-photo{
-    flex:1 1 auto;
-    min-height:0;
     width:100%;
     display:flex;
     align-items:center;
@@ -476,37 +474,33 @@ html{scroll-behavior:auto}
     display:block;
     width:auto;
     height:auto;
-    max-width:100%;
-    max-height:100%;
+    max-width:90%;
+    max-height:55vh;
     object-fit:contain;
 }
 
 
 /* =========================================
-   PART 3 — BOTTOM COUNTDOWN
+   DIVIDER + COUNTDOWN BELOW PHOTO
    ========================================= */
 
 .invited-countdown-section .divider{
-    flex:0 0 auto;
     width:min(180px,40vw);
     height:1px;
-    margin:12px auto 12px;
+    margin:20px auto 14px;
     background:rgba(90,28,41,.22);
 }
 
 .invited-countdown-section .kicker{
-    flex:0 0 auto;
     margin:0 0 4px;
 }
 
 .invited-countdown-section h2{
-    flex:0 0 auto;
-    margin:0 0 10px;
+    margin:0 0 12px;
     font-size:clamp(1.7rem,6vw,3rem);
 }
 
 .invited-countdown-section .countdown{
-    flex:0 0 auto;
     width:min(700px,100%);
     margin:0 auto;
 }
