@@ -411,7 +411,7 @@ h3 em{color:#a9782c;font-weight:400}
 /* Small phones */
 @media(max-width:600px){
     .music-toggle{right:12px;bottom:12px;padding:8px 12px;font-size:.62rem}
-    .corner-logo{top:12px;right:12px;width:120px}
+    .corner-logo{top:12px;right:12px;width:90px}
 }
 
 @media(max-width:390px){
