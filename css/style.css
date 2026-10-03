@@ -119,12 +119,22 @@ html{scroll-behavior:auto}
 /* Floating Music Button */
 .music-toggle{position:fixed;right:18px;bottom:18px;z-index:9999;padding:9px 15px;border:1px solid #c9a76a;border-radius:999px;background:rgba(255,253,248,.94);color:#5a1c29;font-size:.68rem;letter-spacing:.08em;cursor:pointer;box-shadow:0 6px 20px rgba(60,16,24,.12);backdrop-filter:blur(6px);transition:.3s ease;}
 .music-toggle:hover{background:#5a1c29;color:#fff;}
+
+/* Floating Corner Logo */
+.corner-logo{position:fixed;top:18px;right:18px;z-index:9999;width:80px;height:auto;object-fit:contain;pointer-events:none;filter:drop-shadow(0 4px 10px rgba(60,16,24,.12));transition:opacity .3s ease;}
+.corner-logo.hidden{display:none !important;}
+
 @media(max-width:390px){
     .music-toggle{
         right:12px;
         bottom:12px;
         padding:8px 12px;
         font-size:.62rem;
+    }
+    .corner-logo{
+        top:12px;
+        right:12px;
+        width:45px;
     }
 }
 /* Invitation opening lock */

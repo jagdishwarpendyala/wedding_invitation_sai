@@ -85,6 +85,7 @@ setInterval(updateCountdown, 1000);
 const bgMusic = document.getElementById("bgMusic");
 const musicToggle = document.getElementById("musicToggle");
 const scrollCue = document.getElementById("scrollCue");
+const cornerLogo = document.getElementById("cornerLogo");
 
 bgMusic.volume = 0.45;
 
@@ -114,6 +115,8 @@ openInvitationButton.addEventListener("click", async () => {
     musicToggle.classList.remove("hidden");
     /* Show scroll cue */
     scrollCue.classList.remove("hidden");
+    /* Show corner logo */
+    cornerLogo.classList.remove("hidden");
 
 
     /* Start music */
