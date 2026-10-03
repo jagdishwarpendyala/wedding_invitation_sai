@@ -124,7 +124,7 @@ html{scroll-behavior:auto}
 .corner-logo{position:fixed;top:18px;right:18px;z-index:9999;width:120px;height:auto;object-fit:contain;pointer-events:none;filter:drop-shadow(0 4px 10px rgba(60,16,24,.12));transition:opacity .3s ease;}
 .corner-logo.hidden{display:none !important;}
 
-@media(max-width:390px){
+@media(max-width:600px){
     .music-toggle{
         right:12px;
         bottom:12px;
