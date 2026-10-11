@@ -448,7 +448,7 @@ h3 em{color:#a9782c;font-weight:400}
 
     left: 50%;
 
-    bottom: 20px;
+    bottom: 30px;
 
     transform: translateX(-50%);
 
@@ -598,7 +598,7 @@ h3 em{color:#a9782c;font-weight:400}
 
     .scroll-cue {
 
-        bottom: 20px;
+        bottom: 30px;
 
         gap: 8px;
 
